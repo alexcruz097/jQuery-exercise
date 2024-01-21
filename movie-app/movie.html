@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link rel="stylesheet" href="movie.css" />
+  </head>
+  <body>
+    <form action="">
+      <label for="movie-name">Name of the Movie:</label>
+      <input
+        type="text"
+        name="movie-name"
+        id="movie-name"
+        pattern=".{3,}"
+        required
+      />
+      <label for="movie-rating">Rating:</label>
+      <input
+        type="number"
+        min="0"
+        max="10"
+        name="movie-rating"
+        id="movie-rating"
+        required
+      />
+      <button type="button" id="submit-btn">Submit</button>
+    </form>
+    <div class="sort-filter">
+      <label for="sort">Sort By:</label>
+
+      <select name="sort" id="sort">
+        <option>sort</option>
+        <option value="alpha-asc">A-Z</option>
+        <option value="alpha-desc">Z-A</option>
+        <option value="num-asc">num-lowHigh</option>
+        <option value="num-desc">num-highLow</option>
+      </select>
+    </div>
+    <div id="rating-list">
+      <ol></ol>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./movie.js"></script>
+  </body>
+</html>

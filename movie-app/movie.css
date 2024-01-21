@@ -1,0 +1,11 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 25vw;
+  margin: auto;
+}
+#rating-list {
+  width: 100vw;
+  text-align: center;
+font-size: 1.7rem;
+}
